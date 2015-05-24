@@ -8,7 +8,6 @@
 
 ## function makeCacheMatrix
 ## returns a list of different functions, used for storing cached values
-
 makeCacheMatrix <- function(x = matrix()) {
 	solution <- NULL
 	set <- function(y){
@@ -32,10 +31,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ##It checks if the inverse of the matrix is already computed
 ##if the inverse is already known, it returns the inverse
 ##if the inverse is not yet known, it calculates the inverse and returns it
-
-## Write a short comment describing this function
 cacheSolve <- function(x, ...) {
-## Return a matrix that is the inverse of 'x'
+
 	solution  <-x$getInverse()
 	if(!is.null(solution)) {
 	        message("getting the cached data")
